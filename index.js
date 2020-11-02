@@ -61,10 +61,25 @@ console.log(combinedObject);
 
 //STRING OPERATIONS AND MATHODS
 
-const stringOne = " this is first string sentence. "
+const stringOne = " this is first string sentence  learn"
+const stringTwo = "second sentence of string "
 
 console.log(stringOne.trim());
 console.log(stringOne.length);
 console.log(stringOne.toLowerCase());
 console.log(stringOne.toUpperCase());
-console.log(stringOne.split(" ")); // will return array of words of strinOne
+console.log(stringOne.split(" ")); // will return array of words of strinOne    
+console.log(stringOne.charAt(1));
+console.log(stringOne.charCodeAt(1));
+console.log(stringOne.concat(stringTwo));
+console.log(stringOne.endsWith("learn"));  // true
+console.log(stringOne.includes("learn"));  // true
+console.log(stringOne.indexOf("learn")); // 32
+console.log(stringOne.match(/learn/g)); // [  "learn" ]
+console.log(stringOne.replace(/learn/g,'TEACH'));
+console.log(stringOne.search("learn")); // RETURNS POSITION OF LEARN 
+console.log(stringOne.substr(2,4)); // is i
+
+
+
+
