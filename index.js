@@ -28,6 +28,8 @@ const sumAndMultiply = (a,b) => {
     return [a+b, a*b]
 }
 
-const [sum, mul] = sumAndMultiply(10,2);
+const [sum, mul, division = "Not available division"] = sumAndMultiply(10,2);
 console.log(sum);
 console.log(mul);
+console.log(division);
+
