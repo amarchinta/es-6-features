@@ -29,7 +29,36 @@ const sumAndMultiply = (a,b) => {
 }
 
 const [sum, mul, division = "Not available division"] = sumAndMultiply(10,2);
-console.log(sum);
-console.log(mul);
-console.log(division);
+console.log(sum); // 12
+console.log(mul); // 20
+console.log(division); //Not available division
 
+
+const personOne = {
+    name : "amar chinta",
+    age: 25,
+    address : {
+        city : "solapur",
+        nation : "Indian"
+    }
+}
+
+
+const personTwo = {
+    name : "Harbinger Group",
+    address : {
+        nation :"INDIAN",
+        city : "Pune"
+    }
+}
+
+
+const { address : { city }  } =  personOne
+
+//Accessig nested objects 
+console.log(city) // solapur
+
+
+//Combining two objects ..
+const combinedObject = { ...personOne, ...personTwo }
+console.log(combinedObject);
