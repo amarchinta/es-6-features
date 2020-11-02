@@ -33,7 +33,6 @@ console.log(sum); // 12
 console.log(mul); // 20
 console.log(division); //Not available division
 
-
 const personOne = {
     name : "amar chinta",
     age: 25,
@@ -43,7 +42,6 @@ const personOne = {
     }
 }
 
-
 const personTwo = {
     name : "Harbinger Group",
     address : {
@@ -52,13 +50,21 @@ const personTwo = {
     }
 }
 
-
 const { address : { city }  } =  personOne
 
 //Accessig nested objects 
 console.log(city) // solapur
 
-
 //Combining two objects ..
 const combinedObject = { ...personOne, ...personTwo }
 console.log(combinedObject);
+
+//STRING OPERATIONS AND MATHODS
+
+const stringOne = " this is first string sentence. "
+
+console.log(stringOne.trim());
+console.log(stringOne.length);
+console.log(stringOne.toLowerCase());
+console.log(stringOne.toUpperCase());
+console.log(stringOne.split(" ")); // will return array of words of strinOne
