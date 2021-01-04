@@ -32,3 +32,30 @@ Inheritance Types:
 
 1. Classical
 2. Prototypical
+
+
+Types Of Members:
+
+Instance Members
+Proptype Members
+
+
+#will return only instance members
+Object.keys(object_name);
+
+
+# this is will return both instance and proptype members.
+
+for (let key in object_name) 
+	console.log(key);
+
+
+#Dont Extending Objects - Dont modify built in objects
+
+
+Array.proptype.shuffle = function(){
+	//	
+};
+
+const array = [];
+array.shuffle();
